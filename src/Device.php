@@ -87,6 +87,15 @@ class Device {
         return $this;
     }
 
+    /**
+     * Adiciona uma ecternal user_id ao dispositivo
+     * @param $externa_user_id string
+     * @return Device
+     */
+    public function addExternalUserId($externa_user_id) {
+        $this->campos['external_user_id'] = $externa_user_id;
+        return $this;
+    }
 
     /**
     * Cria um novo dispositivo
